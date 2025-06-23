@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Mirror</title>
+  <script defer src="script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
+    .box { border: 1px solid #ddd; padding: 20px; width: 300px; margin: auto; border-radius: 10px; }
+    video { width: 100%; border-radius: 10px; }
+    button { padding: 10px 15px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Mood Mirror</h1>
+  <p>AI-powered facial mood check-in</p>
+
+  <div class="box">
+    <video id="video" autoplay muted></video>
+    <p id="result">Detecting...</p>
+    <button onclick="detectMood()">Check Mood</button>
+  </div>
+</body>
+</html>
